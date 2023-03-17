@@ -1,0 +1,328 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link defer rel="stylesheet" href="style.css" />
+    <script src="./scripts.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      <div class="card-main-grid">
+        <div class="main-card">
+          <div class="top-card">
+            <img
+              src="./images/image-jeremy.png"
+              alt="image of Jeremy"
+              class="avatar"
+            />
+            <div class="heading">
+              <p>Report for</p>
+              <div class="name">Jeremy Robson</div>
+            </div>
+          </div>
+          <div class="bottom-card">
+            <div class="selector" role="tablist" aria-label="Timeframe">
+              <button
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-daily"
+                id="tab-daily"
+                class="selection"
+              >
+                Daily
+              </button>
+              <button
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-weekly"
+                id="tab-weekly"
+                class="selection"
+              >
+                Weekly
+              </button>
+              <button
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-monthly"
+                id="tab-monthly"
+                class="selection"
+              >
+                Monthly
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Daily Card Panel (Aria-Tabs) -->
+        <div
+          class="inner-grid"
+          role="tabpanel"
+          aria-labelledby="tab-daily"
+          id="panel-daily"
+          tabindex="0"
+          aria-hidden="true"
+        >
+          <div class="cards card work">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Work</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time daily">
+                <div class="hours">5hrs</div>
+                <div class="previous">Yesterday - 7hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card play">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Play</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time daily">
+                <div class="hours">1hr</div>
+                <div class="previous">Yesterday - 2hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card study">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Study</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time daily">
+                <div class="hours">0hrs</div>
+                <div class="previous">Yesterday - 1hr</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card exercise">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Exercise</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time daily">
+                <div class="hours">1hr</div>
+                <div class="previous">Yesterday - 1hr</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card social">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Social</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time daily">
+                <div class="hours">1hr</div>
+                <div class="previous">Yesterday - 3hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card self-care">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Self Care</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time daily">
+                <div class="hours">0hrs</div>
+                <div class="previous">Yesterday - 1hr</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Weekly Card Panel (Tab) -->
+        <div
+          class="inner-grid"
+          role="tabpanel"
+          aria-labelledby="tab-weekly"
+          id="panel-weekly"
+          tabindex="0"
+          aria-hidden="true"
+        >
+          <div class="cards card work">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Work</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time weekly">
+                <div class="hours">32hrs</div>
+                <div class="previous">Last Week - 36hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card play">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Play</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time weekly">
+                <div class="hours">10hrs</div>
+                <div class="previous">Last Week - 8hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card study">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Study</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time weekly">
+                <div class="hours">4hrs</div>
+                <div class="previous">Last Week - 7hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card exercise">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Exercise</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time weekly">
+                <div class="hours">4hrs</div>
+                <div class="previous">Last Week - 5hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card social">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Social</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time weekly">
+                <div class="hours">5hrs</div>
+                <div class="previous">Last Week - 10hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card self-care">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Self Care</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time weekly">
+                <div class="hours">2hrs</div>
+                <div class="previous">Last Week - 2hrs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Monthly Card Panel (Tab) -->
+        <div
+          class="inner-grid"
+          role="tabpanel"
+          aria-labelledby="tab-monthly"
+          id="panel-monthly"
+          tabindex="0"
+          aria-hidden="false"
+        >
+          <div class="cards card work">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Work</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time monthly">
+                <div class="hours">103hrs</div>
+                <div class="previous">Last Month - 128hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card play">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Play</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time monthly">
+                <div class="hours">23hrs</div>
+                <div class="previous">Last Month - 29hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card study">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Study</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time monthly">
+                <div class="hours">13hrs</div>
+                <div class="previous">Last Month - 19hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card exercise">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Exercise</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time monthly">
+                <div class="hours">11hrs</div>
+                <div class="previous">Last Month - 18hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card social">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Social</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time monthly">
+                <div class="hours">21hrs</div>
+                <div class="previous">Last Month - 23hrs</div>
+              </div>
+            </div>
+          </div>
+          <div class="cards card self-care">
+            <div class="info-wrapper">
+              <div class="title">
+                <p>Self Care</p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </div>
+              <div class="time monthly">
+                <div class="hours">7hrs</div>
+                <div class="previous">Last Month - 11hrs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
